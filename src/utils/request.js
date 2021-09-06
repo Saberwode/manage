@@ -61,7 +61,8 @@ function request(options) {
     }
 
     // 另行判断，如果项目已经上线，强制使用后台接口
-    if (config.env === 'prod') {
+    console.log(config.env);
+    if (config.env == 'production') {
         service.defaults.baseURL = config.baseApi
     } else {
         // 如果是本地调试，可以判断isMock的状态

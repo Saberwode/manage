@@ -44,6 +44,7 @@ export default {
   },
   methods: {
     login(){
+      // console.log(this.env);
       // el-form提供了一个校验方法validate
       // console.log(this.$refs.userForm);
       this.$refs.userForm.validate(valid=>{
